@@ -1,0 +1,76 @@
+site_name: Pristine Design 文档
+site_description: 众易搭 T 语言（PSL）配套原生 Web UI 组件库 · v2.0 文档导航
+site_author: Pristine Design Docs
+site_url: https://<你的用户名>.github.io/<仓库名>/
+repo_url: https://github.com/<你的用户名>/<仓库名>
+repo_name: <你的用户名>/<仓库名>
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 Pristine Design Docs
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换浅色模式
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - 首页: index.md
+  - UI 组件:
+      - 基础: ui/basic.md
+      - 容器: ui/container.md
+      - 布局: ui/layout.md
+      - 导航: ui/navigation.md
+      - 数据录入: ui/data-entry.md
+      - 数据展示: ui/data-display.md
+      - 数据交互: ui/data-interaction.md
+      - 反馈: ui/feedback.md
+      - 多媒体: ui/media.md
+      - 其他: ui/other.md
+  - 工具库: tools.md
+  - 实战案例:
+      - App（电商类）: cases/app.md
+      - 软件（后台）: cases/software.md
+      - 网站（门户/大屏）: cases/website.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en

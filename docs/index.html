@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Pristine Design 文档</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="众易搭 T 语言（PSL）配套原生 Web UI 组件库 · v2.0 文档导航">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app">加载中…</div>
+  <script>
+    window.$docsify = {
+      name: 'Pristine Design',
+      repo: 'https://github.com/<你的用户名>/<仓库名>',
+      loadSidebar: true,
+      coverpage: true,
+      subMaxLevel: 3,
+      maxLevel: 4,
+      auto2top: true,
+      homepage: 'README.md',
+      notFoundPage: true,
+      search: { placeholder: '搜索组件…', noData: '未找到结果', paths: 'auto', depth: 3 },
+      copyCode: { buttonText: '复制', errorText: '复制失败', successText: '已复制' },
+      pagination: { previousText: '上一页', nextText: '下一页', crossChapter: true, crossChapterText: true }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+</body>
+</html>

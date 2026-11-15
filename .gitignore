@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+node_modules/
+dist/
+.cache/
+*.log
+npm-debug.log*
+.env
+.env.local
+*.tmp
+*.bak
