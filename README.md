@@ -4,7 +4,7 @@
 
 <a href="https://github.com/ttyu6/t">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://p.ttyu.net/ui/logo.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://ttyu.net/ui/logo.png">
   <img alt="Pristine Design Logo" src="https://ttyu.net/ui/logo.png" width="180"/>
 </picture>
 </a>
