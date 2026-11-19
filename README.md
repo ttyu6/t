@@ -4,8 +4,8 @@
 
 <a href="https://github.com/ttyu6/t">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://ttyu.net/ui/logo.png">
-  <img alt="Pristine Design Logo" src="https://ttyu.net/ui/logo.png" width="180"/>
+  <source media="(prefers-color-scheme: dark)" srcset="./logo.png">
+  <img alt="Pristine Design Logo" src="./logo.png" width="180"/>
 </picture>
 </a>
 
@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://github.com/ttyu6/t">
-    <img src="https://ttyu.net/ui/logo.png" alt="Version">
+    <img src="https://img.shields.io/badge/version-2.0.0-blue?style=for-the-badge&logo=semver" alt="Version">
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="MIT License">
@@ -52,7 +52,7 @@
 - [Features](#-features)
 - [Quick Start](#-quick-start)
 - [PSL Syntax](#-psl-syntax)
-- [Component List](#-components)
+- [Components](#-components)
 - [Integration](#-integration)
 - [Local Documentation](#-local-documentation)
 - [Repository Structure](#-repository-structure)
