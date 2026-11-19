@@ -1,18 +1,31 @@
-- [首页](/)
+- **起步**
+  - [介绍](/index.md)
+  - [快速开始](/quickstart.md)
+  - [T 语言语法](/psl-syntax.md)
+
 - **UI 组件**
-  - [基础](ui/basic.md)
-  - [容器](ui/container.md)
-  - [布局](ui/layout.md)
-  - [导航](ui/navigation.md)
-  - [数据录入](ui/data-entry.md)
-  - [数据展示](ui/data-display.md)
-  - [数据交互](ui/data-interaction.md)
-  - [反馈](ui/feedback.md)
-  - [多媒体](ui/media.md)
-  - [其他](ui/other.md)
+  - [基础组件 BasicUI](/ui/basic.md)
+  - [表单 FormUI](/ui/form.md)
+  - [表格 TableUI](/ui/table.md)
+  - [图表 ChartUI](/ui/chart.md)
+  - [树形 TreeSelect](/ui/tree.md)
+  - [上传 Upload](/ui/upload.md)
+  - [弹窗 Modal](/ui/modal.md)
+  - [轮播 Carousel](/ui/carousel.md)
+  - [级联 Cascader](/ui/cascader.md)
+  - [单选 / 多选](/ui/radio-checkbox.md)
+
 - **工具库**
-  - [原生工具函数集](tools.md)
+  - [工具函数](/tools.md)
+  - [管理器基类 BaseUI](/tools/base-ui.md)
+  - [DSL 解析器](/tools/dsl-parser.md)
+
 - **实战案例**
-  - [App（电商类）](cases/app.md)
-  - [软件（后台）](cases/software.md)
-  - [网站（门户/大屏）](cases/website.md)
+  - [简单表单](/cases/simple-form.md)
+  - [数据表格](/cases/data-table.md)
+  - [联动级联](/cases/cascade-demo.md)
+  - [AI 对话面板](/cases/chat-panel.md)
+
+- **其他**
+  - [更新日志](/changelog.md)
+  - [许可协议](/license.md)

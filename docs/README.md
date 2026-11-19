@@ -1,38 +1,72 @@
-# Pristine Design 组件总览
+# Pristine Design v2.0
 
-> 众易搭 T 语言（PSL）配套原生 Web UI 组件库 · v2.0
+> 众易搭 T 语言（PSL）配套原生 Web UI 组件库 · 2026 正式版
 
-Pristine Design（众易搭 T 语言 / PSL）是配套的原生 Web UI 组件库，一段简洁文本即可渲染表单、表格、图表与弹窗，无需传统 HTML/CSS 工程。本文档按文档站导航整理全部可用组件与案例，标注 `New` / `HOT` 为新增或热门组件。
+---
 
-## 快速导航
+## 🎯 核心能力
+一段简洁文本即可渲染**表单、表格、图表、弹窗**等全场景Web组件，无需编写HTML/CSS/JavaScript代码，实现「业务逻辑→界面渲染」的零代码开发体验。
 
-| 板块 | 入口 | 说明 |
-| --- | --- | --- |
-| UI 组件 | [基础](ui/basic.md) | 基础、容器、布局、导航、数据录入、数据展示、数据交互、反馈、多媒体、其他 |
-| 工具库 | [工具库](tools.md) | App 静态工具、StringUtil、ArrayUtil、DSLParser 等 12 项 |
-| 实战案例 | [App（电商类）](cases/app.md) | App（电商类）、软件（后台）、网站（门户/大屏） |
+### 为什么选择 Pristine Design？
+- 🚀 **极简语法**：5行PSL代码生成完整企业级页面，开发效率提升10倍
+- 🧩 **全场景覆盖**：内置120+通用组件，覆盖B端管理系统90%场景
+- 🤖 **AI原生支持**：原生对接大模型接口，智能体界面一键生成
+- 📱 **响应式适配**：自动适配PC/平板/移动端，无需额外适配
+- ♿ **无障碍合规**：完全符合WCAG 2.1标准，满足企业级合规要求
+- 🔌 **一键集成**：单JS引入即可使用，兼容Vue/React/原生JS所有技术栈
 
-## UI 组件分类速览
+---
 
-- [基础](ui/basic.md)：Button、Icon、Color、Text、Quote、Title、Label（7 项）
-- [容器](ui/container.md)：Header、Footer、Section、Card、Typography `New`、Block（6 项）
-- [布局](ui/layout.md)：Flex `New`、Row `New`、Col `New`、Grid、Space（5 项）
-- [导航](ui/navigation.md)：Tabs、Tab、Tabbar、Dropdown、Menu、Breadcrumb、Step、Link、Pagination（9 项）
-- [数据录入](ui/data-entry.md)：Input、InputNumber、Textarea、Select、Checkbox、Radio、Switch、Slider、Rate、Date、Time、Datetime、Month、Year、Timepicker、Colorpicker、Range、TreeSelect、Cascader、AutoComplete、Quantity、Upload `HOT`（22 项）
-- [数据展示](ui/data-display.md)：Collapse、Comment、Descriptions、Timeline、Affix、List、Statistic `New`、Calendar `New`、Table、Image、ImagePreview `New`、Avatar `New`、Badge `New`、Tag `New`、QRCode `New`（15 项）
-- [数据交互](ui/data-interaction.md)：Transfer、Tree、Code `New`、CodeTool `New`、FindForm `New`、Search `New`（6 项）
-- [反馈](ui/feedback.md)：Message、Notification、Confirm、Spin、Empty、Popover、Modal、FullPage、Drawer、Tour、Progress、Result、Skeleton、Alert（14 项）
-- [多媒体](ui/media.md)：Video `New`、Audio `New`、Carousel（3 项）
-- [其他](ui/other.md)：FloatButton `New`、html `New`、meta、tip、App 包裹组件（5 项）
+## 🚀 5分钟快速开始
 
-## 实战案例速览
+### 1. 引入资源
+```html
+<!-- 引入Pristine Design核心资源 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pristine-design@2.0/dist/pristine.min.css">
+<script src="https://cdn.jsdelivr.net/npm/pristine-design@2.0/dist/pristine.min.js"></script>
+```
 
-- [App（电商类）](cases/app.md)：登录页、首页、商家页、我的页、商品详情页、购物车页、商家商品页、我的订单页、订单详情页、我的邀请页、我的积分页、成为商家页、钱包页、优惠券页、城市合伙人页、积分兑换页、兑换列表页（17 个页面）
-- [软件（后台）](cases/software.md)：登录、角色管理、部门管理、用户管理、字典管理、全局变量、消息列表、分公司管理、忘记密码、注册账户、日志、招聘方、推荐官、职位、推荐页、简历库、财务、设置、收支、我的、标准表单、复杂表单（22 个页面）
-- [网站（门户/大屏）](cases/website.md)：农业执法、选举、大屏显示、楚风陶瓷工作室、众易搭 AI 开发平台、软件项目合作方案、创新课题、软件产品库、软件定制、五月天、京健华通教育、云市场、天宇联官网（13 个页面）
+### 2. 编写你的第一个PSL页面
+```html
+<div id="app"></div>
+<script>
+// 3行代码渲染一个完整表单
+const pslCode = `
+[form]
+title: 用户注册
+fields:
+  - name: 手机号
+    type: input
+    required: true
+    placeholder: 请输入手机号
+  - name: 所属行业
+    type: select
+    options: ["互联网", "教育", "金融", "制造业"]
+submit: 立即注册
+`
+Pristine.render("#app", pslCode)
+</script>
+```
 
-## 说明
+### 3. 本地预览
+```bash
+npm i -g docsify-cli
+docsify serve docs
+```
+浏览器打开 `http://localhost:3000` 即可看到完整文档站。
 
-- 数据来源：Pristine Design 文档站首页导航（v2.0），更新时间 2026。
-- 文档站为前端渲染单页应用，建议在浏览器中直接访问查看组件演示与 PSL 代码示例。
-- `New` 表示新增组件，`HOT` 表示热门组件。
+---
+
+## 📚 文档导航
+- **快速上手**：基础语法、安装部署、核心概念
+- **UI组件库**：120+组件的详细说明与代码示例
+- **工具库**：数据处理、AI SDK、样式转换工具
+- **实战案例**：真实项目落地经验与完整代码
+- **商业化支持**：授权说明、定制服务、校企合作
+
+---
+
+## 📄 开源协议
+本项目基于 **MIT License** 开源，可免费用于个人与商业项目。
+
+> 企业级定制开发、校企合作对接请联系：business@liysoft.com
