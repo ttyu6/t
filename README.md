@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://github.com/ttyu6/t">
-    <img src="https://img.shields.io/badge/version-2.0.0-blue?style=for-the-badge&logo=semver" alt="Version">
+    <img src="https://ttyu.net/ui/logo.png" alt="Version">
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="MIT License">
